@@ -17,8 +17,9 @@ export default {
       'gradient-blue': '#5099f3',
     },
     fontSize: {
+      'preview': '0.75',
       sm: '0.8rem',
-      base: '1rem',
+      md: '1rem',
       xl: '1.25rem',
       'smd': '1.3',
       '2xl': '1.563rem',

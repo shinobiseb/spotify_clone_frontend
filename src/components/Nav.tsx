@@ -8,7 +8,7 @@ export default function Nav() {
   return (
     <div className='nav block w-navSize'>
         {/* ----------- Header -----------*/}
-        <ul className='nav-div bg-bg-black text-lg block py-2 px-3 rounded-lg'>
+        <ul className='nav-div bg-bg-black text-lg block py-3 px-3 rounded-lg'>
             <li className='nav-li'>
                 <a className='nav-item flex' href="#Home"> 
                     <HomeRoundedIcon className='icon' style={{ 
@@ -32,7 +32,7 @@ export default function Nav() {
 
         {/* ----------- Library -----------*/}
         <div className='library nav-div bg-bg-black text-lg py-2 px-3 rounded-lg mt-2 block'>
-            <div className='w-full flex justify-between items-center'>
+            <div className='w-full py-1 flex justify-between items-center'>
                 <button className='nav-item flex-row'> 
                     <LibraryMusicRoundedIcon className='icon' 
                         style={{ 
@@ -58,7 +58,7 @@ export default function Nav() {
         {/* ----------- End of Library -----------*/}
 
         {/* ----------- Podcasts -----------*/}
-            <section className='bg-nav-bg-grey rounded-lg text-white px-5 py-4 justify-items-start w-full flex flex-col justify-between my-6 flex-start min-h-full h-48'>
+            <section className='bg-nav-bg-grey rounded-lg text-white px-5 py-4 justify-items-start w-full flex flex-col justify-between my-6 flex-start min-h-full h-44'>
                 <span className=' text-md font-bold'>Let's find some podcasts to follow</span>
                 <span className='block text-sm'>We'll keep you updated on new episodes</span>
                 
@@ -70,7 +70,7 @@ export default function Nav() {
         {/* ----------- End of Podcasts -----------*/}
 
         {/* ----------- Links -----------*/}
-            <div className='bottom-links-cont px-1 flex-wrap flex'>
+            <div className='bottom-links-cont px-1 flex-wrap flex '>
                 <div className='link-cont'>
                     <a href="#">Legal</a>
                 </div>

@@ -53,3 +53,25 @@ li a span {
     display: flex;
     justify-content: center;
 }
+
+.search-link {
+    color: #a5a5a5;
+    font-size: large;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.bar {
+    display: inline-block;
+    width: 1px;
+    height: 1.5rem;
+    border: 1px white solid;
+}
+
+.white-button {
+    color: black;
+    padding: 1rem 2rem;
+    border-radius: 4rem;
+    background-color: white;
+    font-weight: bold;
+}
