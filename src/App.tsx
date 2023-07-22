@@ -1,4 +1,5 @@
 import Nav from "./components/Nav"
+import SignUpBanner from "./components/SignUpBanner"
 import "./index.css"
 
 function App() {
@@ -6,7 +7,8 @@ function App() {
 
   return (
     <>
-      <Nav></Nav>
+      <Nav/>
+      <SignUpBanner/>
     </>
   )
 }

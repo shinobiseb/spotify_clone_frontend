@@ -13,6 +13,8 @@ export default {
       'unhovered-grey': '#a5a5a5',
       'white': '#ffffff',
       'black': '#000000',
+      'gradient-pink': '#af2896',
+      'gradient-blue': '#5099f3',
     },
     fontSize: {
       sm: '0.8rem',
