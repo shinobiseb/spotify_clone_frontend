@@ -1,8 +1,8 @@
-import React from 'react'
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 import AddRoundedIcon from '@mui/icons-material/AddRounded';
 import LibraryMusicRoundedIcon from '@mui/icons-material/LibraryMusicRounded';
+import LanguageRoundedIcon from '@mui/icons-material/LanguageRounded';
 
 export default function Nav() {
   return (
@@ -50,9 +50,59 @@ export default function Nav() {
             <section className='bg-nav-bg-grey rounded-lg text-white px-5 py-4 justify-items-start w-full flex flex-col justify-between my-2 flex-start min-h-full h-36'>
                     <span className=' text-md font-bold'>Create your first playlist</span>
                     <span className='block text-sm'>It's easy, we'll help you</span>
-                <button className='bg-white text-black rounded-2xl font-bold px-3 py-1 w-40 mt-4'>
-                    Create Playlist</button>
+
+                    <button className='bg-white text-black rounded-2xl font-bold py-1 w-40 mt-4'>
+                    Create playlist
+                </button>
             </section>
+        {/* ----------- End of Library -----------*/}
+
+        {/* ----------- Podcasts -----------*/}
+            <section className='bg-nav-bg-grey rounded-lg text-white px-5 py-4 justify-items-start w-full flex flex-col justify-between my-6 flex-start min-h-full h-48'>
+                <span className=' text-md font-bold'>Let's find some podcasts to follow</span>
+                <span className='block text-sm'>We'll keep you updated on new episodes</span>
+                
+                <button className='bg-white text-black rounded-2xl font-bold py-1 w-40'>
+                    Browse podcasts
+                </button>
+            </section>
+
+        {/* ----------- End of Podcasts -----------*/}
+
+        {/* ----------- Links -----------*/}
+            <div className='bottom-links-cont px-1 flex-wrap flex'>
+                <div className='link-cont'>
+                    <a href="#">Legal</a>
+                </div>
+                <div className='link-cont'>
+                    <a href="#">Privacy Center</a>
+                </div>
+                <div className='link-cont'>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div className='link-cont'>
+                    <a href="#">Cookies</a>
+                </div>
+                <div className='link-cont'>
+                    <a href="#">Abouts Ads</a>
+                </div>
+                <div className='link-cont'>
+                    <a href="#">Accessibility</a>
+                </div>
+                <div className='link-cont'>
+                    <a href="#">Notice at Collection</a>
+                </div>
+                <div className='link-cont'>
+                    <a href="#">Your Privacy Choices</a>
+                </div>
+                <a className='link-cont' href="#cookies">Cookies</a>
+            </div>
+            <button className='border border-white rounded-3xl px-4 py-1 flex mb-10'>
+                <LanguageRoundedIcon style={{ 
+                    color: 'white', 
+                    }}/>
+                <span className='ml-1 text-white'>English</span>
+            </button>
         </div>
     </div>
   )

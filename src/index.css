@@ -12,6 +12,8 @@ html {
     padding: 8px;
 }
 
+/* ----- Header ----- */
+
 .nav {
     color: #a5a5a5;
 }
@@ -26,10 +28,28 @@ html {
     color: 'white'
 }
 
+/* ----- Library ----- */
+
 .library {
     justify-content: space-between;
 }
 
 li a span {
     padding-left: 1rem;
+}
+
+/* ----- Bottom Links ----- */
+
+.bottom-links-cont {
+    font-size: 0.6875rem;
+    margin: 2rem 0;
+    padding: 0 24px;
+}
+
+.link-cont {
+    height: 2rem;
+    margin-right: 16px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
