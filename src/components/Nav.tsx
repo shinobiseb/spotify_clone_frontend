@@ -6,20 +6,20 @@ import LanguageRoundedIcon from '@mui/icons-material/LanguageRounded';
 
 export default function Nav() {
   return (
-    <div className='nav block w-navSize'>
+    <div className='nav flex flex-col h-screen w-navSize'>
         {/* ----------- Header -----------*/}
         <ul className='nav-div bg-bg-black text-lg block py-3 px-3 rounded-lg'>
             <li className='nav-li'>
-                <a className='nav-item flex' href="#Home"> 
+                <a className='other-link nav-item flex' href="#Home"> 
                     <HomeRoundedIcon className='icon' style={{ 
                         color: '#a5a5a5', 
-                        fontSize: '2rem'
+                        fontSize: '2rem',
                         }}/>
                     <span>Home</span>
                 </a>
             </li>
             <li className='nav-li'>
-                <a className='nav-item flex' href="#search"> 
+                <a className='other-link nav-item flex' href="#search"> 
                     <SearchRoundedIcon className='icon' style={{ 
                         color: '#a5a5a5', 
                         fontSize: '2rem'
@@ -31,42 +31,43 @@ export default function Nav() {
         {/* ----------- End of Header -----------*/}
 
         {/* ----------- Library -----------*/}
-        <div className='library nav-div bg-bg-black text-lg py-2 px-3 rounded-lg mt-2 block'>
-            <div className='w-full py-1 flex justify-between items-center'>
-                <button className='nav-item flex-row'> 
-                    <LibraryMusicRoundedIcon className='icon' 
-                        style={{ 
-                        color: '#a5a5a5', 
-                        fontSize: '2rem'
-                        }}/>
-                    <span className='pl-3'> Your Library </span>
-                </button>
-                    <AddRoundedIcon className='icon' 
-                        style={{ 
-                        color: '#a5a5a5', 
-                        fontSize: '2rem'
-                        }}/>
-            </div>
-            <section className='bg-nav-bg-grey rounded-lg text-white px-5 py-4 justify-items-start w-full flex flex-col justify-between my-2 flex-start min-h-full h-36'>
-                    <span className=' text-md font-bold'>Create your first playlist</span>
-                    <span className='block text-sm'>It's easy, we'll help you</span>
+        <div className='library nav-div bg-bg-black text-lg py-2 px-3 rounded-lg mt-2 flex flex-col h-full justify-between'>
+            <div className='folding-div'>
+                <div className='w-full py-1 flex justify-between items-center'>
+                    <button className='nav-item flex-row'> 
+                        <LibraryMusicRoundedIcon className='icon' 
+                            style={{ 
+                            color: '#a5a5a5', 
+                            fontSize: '2rem'
+                            }}/>
+                        <span className='other-link pl-3'> Your Library </span>
+                    </button>
+                        <AddRoundedIcon className='icon' 
+                            style={{ 
+                            color: '#a5a5a5', 
+                            fontSize: '2rem'
+                            }}/>
+                </div>
+                <section className='bg-nav-bg-grey rounded-lg text-white px-5 py-4 justify-items-start w-full flex flex-col justify-between my-2 flex-start h-36'>
+                        <span className=' text-md font-bold'>Create your first playlist</span>
+                        <span className='block text-sm'>It's easy, we'll help you</span>
 
-                    <button className='bg-white text-black rounded-2xl font-bold py-1 w-40 mt-4'>
-                    Create playlist
-                </button>
-            </section>
+                        <button className='bg-white text-black rounded-2xl font-bold py-1 w-40 mt-4'>
+                        Create playlist
+                    </button>
+                </section>
         {/* ----------- End of Library -----------*/}
 
         {/* ----------- Podcasts -----------*/}
-            <section className='bg-nav-bg-grey rounded-lg text-white px-5 py-4 justify-items-start w-full flex flex-col justify-between my-6 flex-start min-h-full h-44'>
-                <span className=' text-md font-bold'>Let's find some podcasts to follow</span>
+            <section className='bg-nav-bg-grey rounded-lg text-white px-5 py-4 justify-items-start w-full flex flex-col justify-between my-6 flex-start h-44'>
+                <span className=' text-md font-bold'>Browse Playlists</span>
                 <span className='block text-sm'>We'll keep you updated on new episodes</span>
                 
                 <button className='bg-white text-black rounded-2xl font-bold py-1 w-40'>
                     Browse podcasts
                 </button>
             </section>
-
+        </div>
         {/* ----------- End of Podcasts -----------*/}
 
         {/* ----------- Links -----------*/}
@@ -97,7 +98,7 @@ export default function Nav() {
                 </div>
                 <a className='link-cont' href="#cookies">Cookies</a>
             </div>
-            <button className='border border-white rounded-3xl px-4 py-1 flex mb-10'>
+            <button className='border border-white rounded-3xl px-4 py-1 flex mb-10 ml-5'>
                 <LanguageRoundedIcon style={{ 
                     color: 'white', 
                     }}/>

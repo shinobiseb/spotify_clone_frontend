@@ -12,9 +12,8 @@ export default function Header() {
                         color: 'white', 
                         fontSize: '1.2rem'}}/>
         </button>
-        
 
-        <div className='flex w-3/4 justify-around items-center'>
+        <div className='flex w-3/4 max-w-lg justify-around items-center'>
             <button className='search-link'>Premium</button>
             <button className='search-link'>Support</button>
             <button className='search-link'>Download</button>

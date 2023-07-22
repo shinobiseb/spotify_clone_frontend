@@ -10,12 +10,14 @@ html {
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
     padding: 8px;
+    overflow-x: hidden;
 }
 
 /* ----- Header ----- */
 
 .nav {
     color: #a5a5a5;
+    min-width: 279px;
 }
 
 .nav-item {
@@ -59,6 +61,24 @@ li a span {
     font-size: large;
     font-weight: bold;
     display: inline-block;
+    transition: 250ms;
+}
+
+.search-link:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+.playlist-card {
+    min-width: 144px;
+}
+
+.other-link {
+    transition: 250ms;
+}
+
+.other-link:hover {
+    color: white;
 }
 
 .bar {
@@ -74,4 +94,9 @@ li a span {
     border-radius: 4rem;
     background-color: white;
     font-weight: bold;
+    transition: 250ms;
+}
+
+.white-button:hover {
+    transform: scale(1.1);
 }

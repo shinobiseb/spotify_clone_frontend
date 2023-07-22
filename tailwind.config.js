@@ -15,6 +15,7 @@ export default {
       'black': '#000000',
       'gradient-pink': '#af2896',
       'gradient-blue': '#5099f3',
+      'card-grey': '#171717',
     },
     fontSize: {
       'preview': '0.75',
