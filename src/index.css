@@ -9,15 +9,27 @@
 html {
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 8px;
 }
 
-nav {
+.nav {
     color: #a5a5a5;
 }
 
-.nav-link {
+.nav-item {
     padding: 4px 12px;
-    display: flex;
     align-items: center;
     font-weight: bold;
+}
+
+.icon:hover {
+    color: 'white'
+}
+
+.library {
+    justify-content: space-between;
+}
+
+li a span {
+    padding-left: 1rem;
 }
