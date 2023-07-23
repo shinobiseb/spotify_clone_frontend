@@ -98,7 +98,7 @@ export default function Nav() {
                 </div>
                 <a className='link-cont' href="#cookies">Cookies</a>
             </div>
-            <button className='border border-white rounded-3xl px-4 py-1 flex mb-10 ml-5'>
+            <button className='border border-white rounded-3xl px-4 py-1 flex mb-10 ml-5 w-28 justify-center'>
                 <LanguageRoundedIcon style={{ 
                     color: 'white', 
                     }}/>
