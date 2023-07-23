@@ -61,7 +61,6 @@ li a span {
     color: #a5a5a5;
     font-size: large;
     font-weight: bold;
-    display: inline-block;
     transition: 250ms;
 }
 

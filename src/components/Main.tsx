@@ -1,6 +1,6 @@
-import React from 'react'
 import Header from './Header'
 import PlaylistGallery from './PlaylistGallery'
+
 
 export default function Main() {
   return (
