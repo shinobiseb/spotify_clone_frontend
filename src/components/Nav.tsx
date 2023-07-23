@@ -32,7 +32,7 @@ export default function Nav() {
 
         {/* ----------- Library -----------*/}
         <div className='library nav-div bg-bg-black text-lg py-2 px-3 rounded-lg mt-2 flex flex-col h-full justify-between'>
-            <div className='folding-div'>
+            <div className="library-header">
                 <div className='w-full py-1 flex justify-between items-center'>
                     <button className='nav-item flex-row'> 
                         <LibraryMusicRoundedIcon className='icon' 
@@ -47,7 +47,9 @@ export default function Nav() {
                             color: '#a5a5a5', 
                             fontSize: '2rem'
                             }}/>
-                </div>
+                </div></div>
+            <div className='folding-div overflow-hidden'>
+                
                 <section className='bg-nav-bg-grey rounded-lg text-white px-5 py-4 justify-items-start w-full flex flex-col justify-between my-2 flex-start h-36'>
                         <span className=' text-md font-bold'>Create your first playlist</span>
                         <span className='block text-sm'>It's easy, we'll help you</span>
