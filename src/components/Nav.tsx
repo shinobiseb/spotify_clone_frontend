@@ -6,7 +6,7 @@ import LanguageRoundedIcon from '@mui/icons-material/LanguageRounded';
 
 export default function Nav() {
   return (
-    <div className='nav flex flex-col h-screen w-navSize'>
+    <div className='nav flex flex-col w-navSize'>
         {/* ----------- Header -----------*/}
         <ul className='nav-div bg-bg-black text-lg block py-3 px-3 rounded-lg'>
             <li className='nav-li'>
