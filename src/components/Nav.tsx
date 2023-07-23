@@ -6,7 +6,7 @@ import LanguageRoundedIcon from '@mui/icons-material/LanguageRounded';
 
 export default function Nav() {
   return (
-    <div className='nav flex flex-col w-navSize'>
+    <div className='nav flex flex-col w-navSize h-full'>
         {/* ----------- Header -----------*/}
         <ul className='nav-div bg-bg-black text-lg block py-3 px-3 rounded-lg'>
             <li className='nav-li'>
@@ -49,7 +49,6 @@ export default function Nav() {
                             }}/>
                 </div></div>
             <div className='folding-div overflow-hidden'>
-                
                 <section className='bg-nav-bg-grey rounded-lg text-white px-5 py-4 justify-items-start w-full flex flex-col justify-between my-2 flex-start h-36'>
                         <span className=' text-md font-bold'>Create your first playlist</span>
                         <span className='block text-sm'>It's easy, we'll help you</span>
@@ -73,7 +72,7 @@ export default function Nav() {
         {/* ----------- End of Podcasts -----------*/}
 
         {/* ----------- Links -----------*/}
-            <div className='bottom-links-cont px-1 flex-wrap flex '>
+            <div className='bottom-links-cont px-1 flex-wrap flex'>
                 <div className='link-cont'>
                     <a href="#">Legal</a>
                 </div>

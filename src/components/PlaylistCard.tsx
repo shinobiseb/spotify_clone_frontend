@@ -8,7 +8,7 @@ interface PlaylistCardProps {
 
 const PlaylistCard: React.FC<PlaylistCardProps> = ({ title, description, imageUrl }) => {
   return (
-    <div className='playlist-card rounded-md shadow-black-xl w-48 p-4 bg-card-grey min-w-min mr-3'>
+    <div className='playlist-card rounded-md shadow-black-xl md:w-48 p-4 bg-card-grey mr-3'>
       <div className="imageCont">
         <img className='card-img object-cover w-xl h-xl rounded-md mb-4' src={imageUrl} alt="" />
       </div>

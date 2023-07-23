@@ -9,8 +9,8 @@ function App() {
   const [signedIn, setSignedIn] = useState(false)
 
   return (
-    <>
-      <div className="flex flex-row">
+    <div className="flex flex-col h-screen max-h-screen w-screen">
+      <div className='flex flex-row'>
         <Nav/>
         <Main/>
       </div>
@@ -18,7 +18,7 @@ function App() {
       {
         signedIn ?  null :  <SignUpBanner/>
       }
-    </>
+    </div>
   )
 }
 

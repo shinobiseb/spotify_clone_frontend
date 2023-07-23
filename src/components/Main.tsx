@@ -1,12 +1,17 @@
 import React from 'react'
 import Header from './Header'
-import PlaylistCard from './PlaylistCard'
 import PlaylistGallery from './PlaylistGallery'
 
 export default function Main() {
   return (
-    <div className='w-3/4 max-w-3/4 bg-bg-black rounded-lg ml-2'>
+    <div id='main' className='h-full max-h-[850px] w-full p-0 bg-bg-black rounded-lg ml-2 overflow-y-auto'>
         <Header/>
+        <PlaylistGallery/>
+        <PlaylistGallery/>
+        <PlaylistGallery/>
+        <PlaylistGallery/>
+        <PlaylistGallery/>
+        <PlaylistGallery/>
         <PlaylistGallery/>
         <PlaylistGallery/>
         <PlaylistGallery/>

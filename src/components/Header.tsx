@@ -5,7 +5,7 @@ export default function Header() {
 
 
   return (
-    <div className='flex flex-row justify-between items-center h-16 w-full'>
+    <div className='flex flex-row justify-between items-center h-16 w-full z-100'>
         <button className='ml-5 bg-black px-2 py-1 rounded-full'>
             <ArrowBackIosNewRoundedIcon className='icon' 
                         style={{ 
