@@ -1,7 +1,16 @@
 import ArrowBackIosNewRoundedIcon from '@mui/icons-material/ArrowBackIosNewRounded';
 import { useState } from 'react';
 
-export default function Header() {
+type signInProps = {
+  setLogIn : React.Dispatch<React.SetStateAction<boolean>>
+  state : boolean
+}
+
+export default function Header( {setLogIn, state} : signInProps) {
+
+  function setSignInState() {
+    setLogIn(!state)
+  }
 
 
   return (
@@ -17,9 +26,16 @@ export default function Header() {
             <button className='search-link hidden md:inline-block'>Premium</button>
             <button className='search-link hidden md:inline-block'>Support</button>
             <button className='search-link hidden md:inline-block'>Download</button>
-            <div className='bar'></div>
-            <button className='search-link'>Sign up</button>
-            <button className='white-button'>Log in</button>
+            { 
+              state ? null 
+              :
+              <>
+              <div className='bar'></div>
+              <button className='search-link'>Sign up</button>
+              <button className='white-button' onClick={setSignInState}>Log in</button>
+              </>
+            }
+            
         </div>
     </div>
   )
