@@ -9,14 +9,12 @@ function App() {
   const [signedIn, setSignedIn] = useState(false)
 
   return (
-    <div id="master-cont" className="flex h-screen flex-col max-h-screen w-screen">
-      <div className='flex flex-row'>
+    <div id="master-cont" className="flex h-screen flex-col w-screen">
+      <div id="main-content-cont" className={`flex flex-row ${signedIn ? 'flex-grow' : 'h-full'}`}>
         <Nav/>
         <Main state={signedIn} setLogIn={setSignedIn}/>
       </div>
-      {
-        signedIn ?  null :  <SignUpBanner/>
-      }
+        {!signedIn && <SignUpBanner/>}
     </div>
   )
 }
