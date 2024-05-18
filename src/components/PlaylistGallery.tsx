@@ -5,7 +5,7 @@ export default function PlaylistGallery() {
 
   return (
     <div className='px-4 mt-10 '>
-        <h1 className='text-white font-bold text-2xl mb-3'>Playlist</h1>
+        <h1 className='text-white font-bold text-2xl mb-3'>Music for You</h1>
         <div className='w-full flex flex-row overflow-hidden justify-left'>
             <PlaylistCard title='Peaceful Morning' 
             description='Have a great morning' 
